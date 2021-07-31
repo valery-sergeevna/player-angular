@@ -1,0 +1,66 @@
+.left{
+  width:30%;
+  position: relative;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  width:75%;
+}
+
+.App{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  height:100%;
+}
+.epg{
+  height:35vh;
+  width:100%;
+  background-color: #101e28;
+  overflow-y: scroll;
+}
+.epg ul{
+  list-style-type:none;
+  padding:0 10px;
+}
+.epg ul li{
+  color:white;
+  margin-bottom: 10px;
+  border:1px solid grey;
+  padding-left:20px;
+  position: relative;
+}
+.epg ul p{
+  margin: 4px 0;
+  max-width:600px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.epg ul span{
+  color:lightblue;
+  font-size: 14px;
+}
+.epg ul li.active{
+  color:aqua;
+}
+.epg ul li.future{
+  color:grey;
+}
+p.status{
+  position: absolute;
+  right:10px;
+  top:20%;
+  font-size: 12px;
+}
+p.passed{
+  color:red;
+}
+p.active{
+  color: #01dd01;
+}
+.loading{
+  color:white;
+  text-align: center;
+}
